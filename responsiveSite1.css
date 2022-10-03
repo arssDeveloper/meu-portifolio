@@ -1,0 +1,143 @@
+@media (max-width:1000px){
+    main .container-main div{
+        margin: auto;
+    }
+    main .container-main img{
+        display: none;
+    }
+
+    h2{
+        margin-left: 50px;
+    }
+    div h3{
+        margin-left: 50px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    input{
+        margin: 12px;
+    }
+}
+
+@media (max-width: 1000px){
+    .container{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 700px){
+
+    .menuSpan{
+        display: flex;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    label{
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 22px;
+        width: 30px;
+    }
+
+    label span{
+        display: block;
+        position: absolute;
+        background-color: gold;
+        height: 5px;
+        width: 100%;
+    }
+
+    label span:nth-child(1){
+        top: 0;
+    }
+
+    label span:nth-child(2){
+        top: 8px;
+    }
+
+    label span:nth-child(3){
+        top:16px;
+    }
+
+    #menuSuspenso:checked+label span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
+    #menuSuspenso:checked+label span:nth-child(2){
+        opacity: 0;
+    }
+
+    #menuSuspenso:checked+label span:nth-child(3){
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
+    #menuSuspenso:checked~nav .listMenu{
+        display: flex;
+        flex-direction: column;
+        margin-left: -25%;
+        align-items: center;
+        margin-top: 5px;
+        justify-content: center;
+        transition: 0.5s ease transform;
+    }
+
+    #menuSuspenso:checked~nav .menu li{
+        display: flex;
+        background-color: black;
+        border-bottom: 1px solid gold;
+        border-left: 1px solid gold;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .menu li a {
+        flex: 1;
+        text-align: center;
+    }
+
+     main .container-main img{
+        display: none;
+    }
+
+    .contatos{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .contatos h5{
+        text-align: left;
+        margin-left: 2%;
+    }
+
+    .rodape{
+        background-image: url(/imagens/logoseita_fundotransparente.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 80px;
+    }
+
+    .contatos h5{
+        text-align: center;
+    }
+
+
+}

@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html, body {
+    height: 120vh;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif; /**/ 
+    text-rendering: optimizeLegibility; /* Para Telas modernas redenziar o conteúdo e ficar mais visível, qualidade, etc.*/
+    -webkit-font-smoothing: antialiased; /*Ajuda a tirar os "Serrilhado das telas, melhora a visibilidade"*/
+    color: #7cfc00;
+    background-color: rgb(0, 0, 0);
+}
+    /* Seção de estilização do Header */
+header {
+    background-color: black;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    height: 80px;
+    margin: auto;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #7cfc00;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 24px;
+    transition: all 250ms linear 0s; /*Animação para os items do menu aparecer no tempo determinado*/
+}
+
+header nav ul li a:hover{
+    background-color: rgba(255,255,255,0.15);
+}
+
+header .container img{
+    height:50px;
+}
+    /* Seção de estilização do Main */
+
+main{
+    margin-bottom: 100px;
+    background-color: rgb(0, 0, 0);
+    color: #7cfc00;
+}
+
+main .container-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 100px auto 0px auto; 
+}   
+
+h2 {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+h3{
+    color: gold;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 10px 0;
+}
+
+main img{
+    width: 450px;
+    opacity: 0.95;
+    border-radius: 12px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+form input{
+    width: 380px;
+    padding: 12px;
+    margin-bottom: 2px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255,0.1);
+}
+
+form [type="submit"]{
+    background-color: #ffd700;
+    color: black;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+    padding: 15px;
+    border: 2px solid greenyellow;
+}
+
+    /* Seção de estilização dos cards */
+
+.cards {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 20px; /*Distancia entre um item e outro */
+}
+
+.content{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px #ffd700;
+    transition: all 0.3s ease 0s;   
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.image{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.image img{
+    position: absolute;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+    /* Estilização do rodapé */
+#formContact{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 980px;
+    margin: 40px auto;
+    height: 300px;
+    font-size: 15px;
+    flex-wrap: wrap;
+    border: 2px solid #7cfc00;
+    border-radius: 20px;
+}
+
+.Contacts{
+    width: 90%;
+    height: 100%;
+}
+
+#redeSociais{
+    margin: 20px 15px; 
+}
+
+#redeSociais ul li{
+    margin: 5px;
+}
+
+#redeSociais ul{
+    list-style: none;
+}
+
+#redeSociais ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#redeSociais ul li a:hover{
+    background-color: rgba(255,255,255,0.1);
+    color: #ffd700;   
+}
+
+#formContact .referencias{  
+    margin-top: 12%;
+}
+
+.referencias p{
+    text-align: center;
+}

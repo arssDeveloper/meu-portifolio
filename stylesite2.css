@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,700;1,300&family=Roboto:ital,wght@0,400;0,700;1,300;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.cabecalho, .rodape{
+    max-width: 1280px;
+    margin: auto;
+    color: gold;
+    background-color: black;
+}
+
+.cabecalho {
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-family: Poppins;
+}
+
+#menuSuspenso{
+    display: none;
+}
+
+.cabecalho h1{
+    padding-right: 1%;
+}
+
+.descricaoMain{
+    text-align: center;
+    background-image: linear-gradient(to right, red, green, gold);
+    padding-bottom: 5px;
+    font-family: Poppins;
+    color: white;
+    margin-bottom: 1px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.content{
+    display: flex;
+    width: 1280px;
+    margin: auto;
+}
+
+.menuBar{
+    border: 1px solid rgba(200, 0, 0, 0.5);
+    border-radius: 5px;
+    background-image: url(/Imagens/S.E.I.T.A._imagem.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-position-y: 65px;
+    background-size: 300px;
+    color: white;
+    grid-area: menuBar;
+    width: 40%;
+    height: 300px;
+    display: block;
+    margin-top: 120px;
+    margin-right: 2px;
+    padding:5px;
+}
+
+.listMenu li{
+    margin: 1px;
+    padding: 1px;
+    background-color: gold;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.listMenu li a {
+    text-decoration: none;
+}
+
+.listMenu li:hover{
+    background-color: rgba(243, 243, 243, 0.671);
+    color: white;
+    padding: 2px;
+}
+
+.listMenu li a:hover{
+    color: greenyellow;
+}
+
+.listMenu li a{
+    color: black;
+    font-family: poppins;
+    
+    
+}
+
+.cards{
+    grid-area: cards;
+    color: gold;
+    background-color: black;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    font-family: Poppins;
+    padding-top: 100px;
+}
+
+.card{
+    margin: 10px;
+    width: 320px;
+    height: 280px;
+    border: 2px groove white;
+    height: auto;
+    color: black;
+    border-radius: 5%;
+    background-color: red;
+}
+
+.card > header {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.card:hover{
+    transform: translateY(-3px);
+    transition: all 5s ease 0;
+    box-shadow: 5px 10px  20px greenyellow;
+}
+
+.btnComprar {
+    display: block;
+    margin-left: 75%;
+    margin-top: -4%;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.btnComprar:hover{
+    background-color: greenyellow;
+    color: black;
+    padding: 7px;
+    border: 1px solid green;
+}
+.card > header {
+    text-align: center;
+    padding-top: 5px;
+}
+.card img {
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    width: 270px;
+    margin-bottom: 5px;
+    height: 200px;
+    border-radius: 5%;
+    border: 2px groove gold;
+}
+
+.dados{
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dadosTerra, .dadosProprietario, .contato{
+    margin: 5px;    
+}
+
+.dadosTerra {
+    border-radius: 10px;
+    padding: 5px;
+    color: black;
+    background-color: white;
+}
+
+.dadosProprietario {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.card header h3{
+    border-bottom: 1px solid white;
+    color: black;
+}
+
+.card header p{
+    color: black;
+    font-weight: 700;
+    background-color: white;
+}
+.contato {
+    display: none;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    font-family: poppins;
+    padding-top: 100px;
+}
+
+.botoes{
+    margin: 1px;
+    display: inherit;
+    justify-content: space-between;
+    padding: 5px;
+    border-top: 1px solid red;
+    padding-top: 10px;
+}
+
+.logo {
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo p{
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.botoes img{
+    width: 30px;
+    height: 30px;
+}
+
+.botoes .btnComprar{
+    margin-left: 1%;
+    padding: 5px;
+}
+
+.redeSocial{
+    padding: 10px;
+    color: cyan;
+    display: inline-block;
+    margin: auto;
+}
+
+.redeSocial h5{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.redeSocial img {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
+.redeSocial img:hover {
+    background-color: rgba(200, 0, 0, 0.7);
+    padding: 3px;
+    transform: translateY(-3px);
+    border-radius: 50%;
+    cursor: pointer;
+}

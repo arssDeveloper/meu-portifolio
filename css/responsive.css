@@ -1,0 +1,46 @@
+@media (max-width:1000px){
+    main .container-main div{
+        margin: auto;
+    }
+    main .container-main img{
+        display: none;
+    }
+
+    h2{
+        margin-left: 50px;
+    }
+    div h3{
+        margin-left: 50px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    input{
+        margin: 12px;
+    }
+}
+
+@media (max-width: 1000px){
+    .container{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 700px){
+    nav {
+        display: none;
+    }
+
+    main .container-menu img{
+        display: none;
+    }
+
+}
